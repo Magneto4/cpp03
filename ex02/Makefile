@@ -6,11 +6,11 @@
 #    By: nseniak <nseniak@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/08 14:21:20 by nseniak           #+#    #+#              #
-#    Updated: 2023/02/23 13:56:26 by nseniak          ###   ########.fr        #
+#    Updated: 2023/02/23 14:12:24 by nseniak          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS		= ClapTrap.cpp  main.cpp ScavTrap.cpp
+SRCS		= ClapTrap.cpp  main.cpp ScavTrap.cpp FragTrap.cpp
 NAME		= ClapTrap
 OBJS 		= $(SRCS:.cpp=.o)
 DEP			= $(OBJS:.o=.d)

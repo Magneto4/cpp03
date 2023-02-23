@@ -1,3 +1,6 @@
+#ifndef CLAPTRAP_HPP
+# define CLAPTRAP_HPP
+
 #include <string>
 
 class ClapTrap
@@ -19,3 +22,5 @@ public:
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 };
+
+#endif

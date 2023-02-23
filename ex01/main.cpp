@@ -1,15 +1,18 @@
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int	main(void)
 {
-	ClapTrap	ct1("Cyclops");
+	ScavTrap	st1("Cyclops");
 
-	ct1.takeDamage(5);
-	ct1.beRepaired(6);
-	for (int i = 0; i < 10; i ++)
-		ct1.attack("Nimrod");
+	st1.takeDamage(5);
+	st1.beRepaired(6);
+	st1.attack("Nimrod");
 
-	ClapTrap	ct2(ct1);
-	ct2.takeDamage(1);
-	ct2.attack("Mystique");
+	ScavTrap	st2(st1);
+	st2.takeDamage(120);
+	st2.attack("Mystique");
+	st2 = st1;
+	st2.attack("Mr Sinister");
+	st2.guardGate();
 }
